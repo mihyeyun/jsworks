@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>변수의 교환</title>
+</head>
+<body>
+    <script>
+       // var x = 0;
+       // var y = 1;
+
+        var x = 0, y = 1;
+        var temp = 0; //숫자로 초기화
+        //var str = ""; 공백문자 초기화
+
+        document.write("교환 전<br>")
+        document.write("x=" + x + ", y=" + y)
+        document.write("<br>==========================<br>")
+
+        // 교환처리
+        temp = x;   // x 값을 temp에 대입
+        x = y;      // y 값을 x에 대입
+        y = temp;   // temp 값을 y에 대입
+
+        document.write("교환 후<br>")
+        document.write("x=" + x + ", y=" + y)
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문자셋(charset) 출력하기</title>
+    <script>
+        /* 
+        문자셋 - 유니코드(2Byte-16비트, 65536개), 아스키코드(1Byte-7bit(128개)) */
+
+        var ch1 = 65;
+        console.log(ch1); //65
+        console.log(String.fromCharCode(ch1)); //A
+
+        var ch2 = 'B';
+        console.log(ch2); //B
+        console.log(ch2.charCodeAt(0)); //0번 위치, 66
+
+        //유니코드
+        var ch3 = '나';
+        console.log(ch3);
+        console.log(ch3.charCodeAt(0)); //45208
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

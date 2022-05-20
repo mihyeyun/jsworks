@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>산술 연산자</title>
+</head>
+<body>
+    <script>
+        //입력(변수에 값이 대입)
+        var num1 = 8, num2 =5;
+        var result = 0;
+
+        //처리(연산)
+        result = num1 + num2;
+        console.log(result);  //13
+
+        result = num1 - num2;
+        console.log(result);  //3
+        
+        result = num1 * num2;
+        console.log(result);  //40
+       
+        result = num1 / num2;
+        console.log(result);  //1.6
+        
+        //나머지 연산자 - %
+        result = num1 % num2;
+        console.log(result);  //3
+
+        //증가, 감소 연산자 (++, --)
+        var a = 10;
+        // a =  a + 1;
+        // a = ++a;
+        console.log(++a) //11
+        //console.log(a++)  //10, 후치연산
+        console.log(a)    //11
+
+        //과목의 총점과 평균을 계산하는 프로그램
+        //var는 중복 선언이 허용, let 허용되지 않음 (권장)
+        //입력
+        var mathScore = 70;
+        var engScore = 83;
+        let total = 0; //초기화 방법- 정수는 0, 실수는 0.0
+        let avg = 0.0;
+        
+        //연산
+        total = mathScore + engScore;
+        //평균계산
+        avg = total / 2;
+        //출력
+        console.log("총점 : " + total); //153
+        console.log("평균 : " + avg);
+
+
+    </script>
+</body>
+</html>
