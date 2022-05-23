@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>while ~ if ~ break문</title>
+</head>
+<body>
+    <script>
+        //1부터 10까지 출력
+        /* var i = 0;
+        while (i < 10){
+            i++;
+            console.log(i);
+        } */
+
+        //반복 조건문
+        let n = 0;
+        while(true){
+            n++;
+            //if문이 한 라인일때 코드 블럭 생략 가능
+            if(n > 10) break; //n = 11
+            console.log(n);
+        }
+
+    </script>
+</body>
+</html>

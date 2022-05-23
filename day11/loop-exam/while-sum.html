@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>while문 합계 구하기</title>
+</head>
+<body>
+    <script>
+        // 1부터 10까지의 합계
+        var sumV = 0;
+        var i = 0;
+
+        while(i < 10){
+            i++;   //먼저 1증가 후 더하기
+            sumV += i;
+            // console.log("i=" + i + ", " + "sumV=" + sumV)           
+        }
+        console.log("합계=" + sumV);
+
+        /*
+        sumV = sumV + 1;       //0 + 1 = 1
+        sumV = sumV + 2;       //1 + 2 = 3
+        sumV = sumV + 2;       //3 + 3 = 6
+        sumV = sumV + 2;       //6 + 4 = 10
+        sumV = sumV + 2;       //10 + 5 = 15
+        */
+    </script>
+</body>
+</html>

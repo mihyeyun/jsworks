@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>데이터 형 변환</title>
+</head>
+<body>
+    <script>
+        /*
+        형변환 (type conversion)
+        문자형 > 숫자형 :
+
+        -number(문자): 정수, 실수
+        -parseInt(문자): 정수
+        -parseFloat(문자): 실수
+
+        숫자 > 문자형:
+        -toString(숫자): 문자
+        */
+
+        // Number() 함수
+        let n1 = Number("10a");
+        console.log(n1);
+
+        let n2 = Number("2.54");
+        console.log(n2);
+
+        //parseInt() - 10 or 10a도 가능
+        let n3 = parseInt("10a");
+        console.log(n3);
+
+        //parseFloat()
+        let n4 = parseFloat("2.54");
+        console.log(n4);
+
+        //toString()
+        let val1 = 100;
+        let val2= 1;
+        let str = val1.toString() + val2.toString();
+        console.log(str); //1001
+
+    </script>
+</body>
+</html>
