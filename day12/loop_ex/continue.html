@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>continue 문</title>
+</head>
+<body>
+    <script>
+        /* 반복문에서 continue를 만나면 이후 반복되는 부분을 수행하지 않고
+        조건식이나 증감식을 수행함 */
+        //1부터 10까지 자연수 중 1부터 5까지 출력(break)
+        for(let i = 1; i <= 10; i++){
+            if(i > 5){
+                break;
+            }
+            console.log(i);
+        } 
+        console.log("===========")
+
+        //1부터 10까지 자연수 중 5를 제외한 수 출력 (continue)
+        for(let i = 1; i <= 10; i++){
+            if(i == 5){
+                continue; //계속 수행
+            }
+            console.log(i);
+        }
+
+        console.log("===========")
+        //1부터 10까지 자연수 중 1부터 5까지 출력 (continue)          
+        for(let i = 1; i <= 10; i++){
+            if(i > 5){
+                continue;
+            }
+            console.log(i);
+        } 
+    </script>
+</body>
+</html>

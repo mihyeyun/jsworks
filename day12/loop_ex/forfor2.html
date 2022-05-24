@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>중첩 for문</title>
+</head>
+<body>
+    <script>
+        for(let i = 0; i < 5; i++){
+            for(let j = 1; j <= 5; j++){
+                let num = i * 5 + j;
+                document.write("좌석" + num + " ");
+            }
+            document.write("<br>") //다음 줄
+        }
+    </script>
+</body>
+</html>

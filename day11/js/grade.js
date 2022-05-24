@@ -1,4 +1,4 @@
-let score = 50;
+let score = Number(prompt("점수를 입력하세요"));
 let grade = ""; //문자형 변수 초기화
 
 if(score >= 90 && score <= 100){
