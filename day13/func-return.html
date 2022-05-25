@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>return이 있는 함수</title>
+</head>
+<body>
+    <script>
+        //return이 있는 함수
+        //매개변수는 자료형(let, var) 생략함
+        //매개변수가 1개
+        function square(x){ 
+           return x * x;
+        }
+
+        //매개변수가 2개
+        function add(x, y){
+            // let num = x + y;
+            // return num;
+            return x + y; 
+        }
+
+        //반환값을 num에 저장
+        let num = square(5);
+        document.write("제곱 값 : " + num);
+
+        document.write("<br>============<br>")
+
+        //두 값을 입력
+        let result = add(10, 11);
+        document.write("두 수의 합 : " + result);
+
+
+    </script>
+</body>
+</html>
