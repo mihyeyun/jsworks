@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>let & var</title>
+</head>
+<body>
+    <script>
+        //변수의 선언과 재할당
+        //원칙적으로 같은 이름의 변수를 재할당 할 수 없다
+        //var는 가능해서 되도록이면 let을 사용한다
+        /* var x = 1;
+
+        var x = 2;
+        console.log(x); */
+
+       /*let x = 1;
+        let x = 2; let은 같은 이름으로 재선언 불가
+        x = 2;
+        console.log(x);*/
+
+        //var의 호이스팅(hoisting)은 인터프리터가 후 선언을 해도 기억하는 것을 의미한다
+
+        /* console.log(a);
+        var a = 1; 에러없음
+        console.log(a); */
+
+      
+        console.log(b); 
+        // let b = 2; 에러발생
+        
+    </script>
+</body>
+</html>

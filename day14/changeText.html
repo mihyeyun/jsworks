@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>글자색 바꾸기</title>
+</head>
+<body>
+    <h1 onclick="changeText()" id="switch">Click on this Text!</h1>
+    <script>
+        function changeText(){
+            // document.getElementById("switch").innerHTML = "Good Job!!";
+            let element = document.getElementById('switch')
+            element.innerHTML = "Good job!!"
+            element.style.color = "#00f";
+        }
+    </script>
+</body>
+</html>
