@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>주사위 만들기</title>
+    <style>
+        body{
+            margin-top: 50px;
+            text-align: center;
+        }
+        p{font-size: 1.5em; color: #00f;}
+        button{font-size: 1.2em;}
+    </style>
+</head>
+<body>
+    <button onclick="throwDice()">주사위</button>
+    <p id="display"></p>
+
+    <script>
+        function throwDice(){
+            let dice = Math.floor(Math.random()*6) + 1;
+            //객체.함수.속성
+            //document.getElementById("display").innerHTML = dice;
+
+            //선택자가 id나 클래스 모두 되는 함수
+            document.querySelector("#display").innerHTML = dice;
+        }
+    </script>
+</body>
+</html>

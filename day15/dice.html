@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>주사위 만들기</title>
+</head>
+<body>
+    <script>
+        //주사위 만들기
+        // let dice = Math.floor(Math.random()*6)+1;
+        // document.write(dice);
+
+        //주사위 10번 던지기
+        /*for(let i = 1; i <= 10; i++){
+            let dice = Math.floor(Math.random()*6)+1;
+        console.log(dice);
+        }*/
+
+        //주사위 2개를 10번 던지기
+        //두 수의 합이 8이면 "Eight Thrown!", 11이면 "Eleven Thrown!!"
+        //두 눈의 수가 같으면 "Double Thrown!!"을 출력
+        for(let i = 1; i <= 10; i++){
+            let dice1 = Math.floor(Math.random()*6)+1;
+            let dice2 = Math.floor(Math.random()*6)+1;
+            console.log(dice1 + ", " + dice2)
+            let sumV = dice1 + dice2;
+            //if()독립적인 조건일 때 사용
+            //else if()도 가능
+            if(sumV === 8){
+                console.log("Eight Thrown!")
+            }else if(sumV === 11){
+                console.log("Eleven Thrown!!")
+            }else if(dice1 === dice2){
+                console.log("Double Thrown!!")
+            }else{
+                console.log(dice1 + ", " + dice2)}
+        }
+
+        
+    </script>
+</body>
+</html>

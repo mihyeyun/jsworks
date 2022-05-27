@@ -6,21 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>배경색 바꾸기</title>
     <link rel="stylesheet" href="./css/bgcolor.css">
+    <style>
+        span{color: white;}
+    </style>
 </head>
 <body>
     <div class="menu">
         <ul>
-            <li><a href="#" onclick="changeBg('green')">Green</a></li>
-            <li><a href="#" onclick="changeBg('black')">Black</a></li>
-            <li><a href="#" onclick="changeBg('pink')">Pink</a></li>
+            <li><a href="#" onclick="changeBg('green', '16px')">Green</a></li>
+            <li><a href="#" onclick="changeBg('black', '20px')">Black</a></li>
+            <li><a href="#" onclick="changeBg('pink', '25px')">Pink</a></li>
         </ul>
     </div>
-    <div class="box" id="rect"></div>
+    <div class="box" id="rect"><span>안녕하세요.</span></div>
 
     <script>
+        // 매개 변수가 있는 함수
         function changeBg(color){
             let rect = document.getElementById("rect");
             rect.style.backgroundColor = color;
+            rect.style.fontSize = size;
         }
     </script>
 </body>
