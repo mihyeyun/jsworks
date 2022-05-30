@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>do~while문</title>
+</head>
+<body>
+    <script>
+        //while문
+        let i = 1;
+        let sum = 0;
+
+        // while(i > 10){
+        //     // console.log(i);
+        //     sum += i;
+        //     i++;
+        // }
+        // console.log(sum); //0
+
+        //do ~ while 문
+        //1번은 실행하고 싶을 때 사용
+        do{
+            sum += i;
+            i++;
+        }while(i > 10); //false이므로 빠져나감
+        console.log(sum) //1
+    </script>
+</body>
+</html>

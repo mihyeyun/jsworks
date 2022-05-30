@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if 문</title>
+    <script>
+        //세 과목의 점수 평균이 60점 이상이면 "합격", 아니면 "불합격" 
+        //세 과목중 1과목이라도 40점 미만이면 "불합격"
+        var html = Number(prompt('html 점수입력', ''));
+        var css = Number(prompt('css 점수입력', ''));
+        var javascript = Number(prompt('javascript 점수입력', ''));
+        var avg = (html + css + javascript) / 3;
+        var comment;
+        if (avg >= 60){
+            if (html < 40){
+                comment = 'HTML' + '40점 미만 불합격';
+            }else if(css < 40){
+                comment = 'css' + '40점 미만 불합격';
+            }else if (javascript < 40){
+                comment = 'javascript' + '40점 미만 불합격';
+            }else{
+                comment = '평균' + avg + '점 합격';
+            }
+        }else{
+            comment = '평균' + avg.toFixed(2) + '점 불합격';
+        }
+        document.write(comment);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

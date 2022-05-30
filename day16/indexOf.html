@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>indexOf() 함수</title>
+    <script>
+        //일치하면 위치를 반환함, 일치하지 않으면 -1을 반환
+        //문자열은 특별한 1차원 배열이다.
+        let str = "Hello world, welcome world";
+
+        console.log(str.indexOf("world")); //6
+        console.log(str.indexOf("sky")); //-1
+        //중복된 문자인 경우 뒤에서부터 찾을 수 있다.
+        console.log(str.lastIndexOf("world")); //21
+    
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

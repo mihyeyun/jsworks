@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>splice() 함수</title>
+    <script>
+        let animal = ['bear', 'chicken', 'dog', 'horse'];
+
+        //특정 인덱스에서 삭제
+        // delete animal['dog'];
+        // splice(인덱스, 삭제 개수, "추가 item")
+        animal.splice(2, 1);
+        for(let item in animal)
+        document.write(animal[item] + " ");
+        
+        document.write("<br>")
+        
+        //특정 인덱스에 추가
+        //animal[1] = "pig";
+        animal.splice(1, 0, "pig")
+        for(let item in animal)
+        document.write(animal[item] + " ");
+
+        //concat()- 두 배열을 합치는(더하는) 함수
+        //join()- 두 배열을 연결하는 함수
+       let number = [1, 2, 3];
+       let char = ['a', 'b', 'c'];
+
+       let list = number.concat(char);
+       console.log(list);
+
+       //구분기호로 join('-')
+       document.write(number.join('-')); //1-2-3
+        document.write("<br>")
+       document.write(char.join(':')); //a:b:c
+        document.write("<br>")
+       document.write(char.join()); //a,b,c
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

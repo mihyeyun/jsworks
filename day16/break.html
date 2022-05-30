@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>break 문</title>
+</head>
+<body>
+    <script>
+        //1부터 20까지 수에서 5까지의 합을 계산하세요.
+        let limitNum = 6;
+        let i = 0;
+        let sum = 0;
+        for(i = 1; i <= 20; i++){
+            sum += i;
+            if(i == limitNum){
+                break;
+            }
+            console.log(sum);
+        }
+    </script>
+</body>
+</html>

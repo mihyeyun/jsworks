@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>객체의 정의와 사용</title>
+    <script>
+        //person 객체 생성
+        //key : value 형식
+        let person = {
+            name : "손흥민",
+            age : 31,
+            isMerried : false,
+
+            play : function(){
+                // alert("골인!!")
+                console.log("골인!!")
+            }
+        }
+
+        //출력 - 객체이름.속성
+        console.log("이름 : " + person.name);
+        console.log("나이 : " + person.age);
+        console.log("결혼유/무 : " + person.isMerried);
+        
+        //객체이름.함수(메서드)
+        person.play();
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

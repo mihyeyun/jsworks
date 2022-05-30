@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>익명함수로 만들기</title>
+    <script>
+        // //명시적 선언
+        // function compute(){
+        //     let x = 10;
+        //     let y= 100;
+        //     let result = x / y ;
+        //     console.log(result);
+        // }
+
+        // compute();
+
+        //익명 함수 선언(annonysmous)
+        //변수에 함수를 대입
+        let compute = function(){
+            let x = 10;
+            let y= 100;
+            let result = x / y ;
+            console.log(result);
+        }
+        compute();
+
+        //1부터 10까지 출력하는 함수
+        let number = function(x){
+            for(let i= 1; i <= x; i++){
+                console.log(i);
+            }
+        }
+        number(20);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
