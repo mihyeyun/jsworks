@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array 객체 함수</title>
+    <script>
+        //toString() - 배열 객체를 문자열로 변환
+        let alphabet = ['a', 'b', 'c', 'd', 'e'];
+        document.write(alphabet);
+        console.log(alphabet);
+        document.write("<br>");
+        document.write(alphabet.toString());
+        console.log(alphabet.toString());
+        document.write("<br>");
+
+        //숫자, 문자, 객체
+        for(let item in alphabet){
+            // console.log(alphabet[item]);
+            document.write(alphabet[item]);
+        }
+        
+        document.write("<br>");
+        //sort()
+        let num = [15, 33, 4, 11, 54, 99];
+        num.sort(function(a,b){
+            //return a-b;
+            return b-a;
+        })
+        
+        console.log(num.toString());
+
+        //reverse()
+        let letter = ['a', 'b', 'c', 'd','e'];
+        console.log(letter.reverse());
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

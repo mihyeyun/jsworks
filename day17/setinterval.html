@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setInterval 함수</title>
+</head>
+<body>
+    <h3>3초 후에 알림창이 뜨고, 1초에 한번 계속 창이 뜹니다.</h3>
+    
+    <script>
+        //window 객체 소속 setInterval(실행문, 밀리초(ms))
+        //실행문 함수는 함수 호출 시 ()를 생략한다
+        setInterval(function(){  //이름이 없는 함수(실행 함수)
+            alert("안녕하세요~")
+        }, 3000);
+
+        /* setInterval(winHello, 3000);
+        
+        function winHello (){
+            alert("Hello~");
+        } */
+
+
+    </script> 
+</body>
+</html>

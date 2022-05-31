@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이벤트 함수</title>
+</head>
+<body>
+    <div>
+        <img src="./images/cup-1.png" id="pic1" alt="붉은색 찻잔">
+    </div>
+    <!-- 태그의 onclick 속성으로 이벤트 구현 -->
+    <script>
+       /* function changePic(){
+            let pic1 = document.querySelector("#pic1");
+            pic1.src = "./images/cup-2.png"
+        }*/
+
+    // 자바 스크립트의 객체의 이벤트 함수로 이벤트 구현
+
+    let pic2 = document.getElementById("pic1");
+    /*pic2.onclick = changePic; //함수 호출-괄호가 없음
+    function changePic(){
+        pic2.src = "images/cup-2.png"
+    }*/
+
+    //실행 함수(toggle 방식)
+    let sw = false;
+
+    pic2.onclick = function(){
+        if(sw == false){
+            pic2.src = "images/cup-2.png";
+            sw = true;
+        }else{ //sw == true
+            pic2.src = "images/cup-1.png";
+            sw = false;
+        }
+        
+    }
+    </script>
+</body>
+</html>

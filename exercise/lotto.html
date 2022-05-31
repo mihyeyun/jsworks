@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로또 추첨 프로그램</title>
+</head>
+<body>
+    <section>
+        <button type="button" onclick="lotto()">로또 추첨 번호</button>
+        <p id="btn"></p>
+    </section>
+    <script>
+        let number = 45;
+        let lottoNum = new Array(6);
+
+        function lotto(){
+            let pick = Math.floor(Math.random()*number) + 1;
+            document.getElementById("btn").innerHTML = pick(lottoNum[i]);
+        }
+    </script>
+</body>
+</html>
