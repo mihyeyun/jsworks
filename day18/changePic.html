@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setTimeout() 함수</title>
+</head>
+<body>
+    <div>
+        <img src="./images/cup-1.png" id="pic" alt="빨간 컵">
+    </div>
+
+    <script>
+        // let pic = document.getElementById("pic");
+        let pic = document.querySelector("#pic");
+        
+        pic.onclick = function(){
+
+            setTimeout(function(){
+                pic.src="./images/cup-2.png";
+            }, 1000);
+
+        }
+    </script>
+</body>
+</html>

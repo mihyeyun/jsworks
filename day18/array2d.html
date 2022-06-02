@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2차원 배열 생성과 사용</title>
+    <script>
+        //이차원 배열
+        let number = [
+            [1, 2, 3], 
+            [4, 5, 6, 7]
+        ]
+
+        //조회(출력)
+        console.log(number[0][0])
+        console.log(number[0][1])
+        console.log(number[0][2])
+
+        console.log(number[1][0])
+        console.log(number[1][1])
+        console.log(number[1][2])
+
+        //배열의 크기
+        console.log("배열의 갯수 (행) : " + number.length + "개");
+        console.log("배열의 갯수 (열) : " + number[0].length + "개");
+
+        //요소 수정
+        number[0][2] = 10;
+
+
+        //전체 출력
+        for(let i = 0; i < number.length; i++){
+            for(let j = 0; j < number[i].length; j++){ //열의 크기는 인덱스로
+                console.log(number[i][j] + " ");
+            }
+        }
+
+        //연산 - 합계, 평균
+        let sumV = 0;
+        let avgV = 0.0;
+        let count = 0;
+
+        for(let i = 0; i < number.length; i++){
+            for(let j = 0; j < number[i].length; j++){ //열의 크기는 인덱스로
+                sumV += number[i][j]
+                count++;
+            }
+        }
+        //평균 = 합계 / 갯수
+        avgV = sumV / count;
+        console.log("합계 : " + sumV); //1 2 10 4 5 6ㄴ
+        console.log("갯수 : " + count);
+        console.log("평균 : " + avgV);
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

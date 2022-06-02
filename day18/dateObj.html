@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date 객체</title>
+</head>
+<body>
+    <script>
+        let dateObj = new Date(2022, 9, 30, 10, 30);
+        let dateInfo={
+            year: dateObj.getFullYear(),
+            month: dateObj.getMonth() + 1,
+            date: dateObj.getDate(),
+            hours: dateObj.getHours(),
+            minutes: dateObj.getMinutes(),
+            // nowDate : dateObj.toUTCString()
+            nowDate : dateObj.toLocaleString()
+        }
+        for(let i in dateInfo){
+            //i -> 속성(key), dateInfo[i] -> 속성값
+            console.log(i + ":" + dateInfo[i]);
+        }
+    </script>
+</body>
+</html>

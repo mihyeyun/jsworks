@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이벤트 주요 객체 메서드 p411</title>
+</head>
+<body>
+    <div><a href="http://icoxpublish.com/" id=icox>아이콕스</a></div>
+    <script>
+        let icox = document.getElementById("icox");
+        icox.onclick=function(){
+            alert("아이콕스");
+            event.preventDefault(); //하이퍼링크 연결 중지
+        }
+    </script>
+</body>
+</html>

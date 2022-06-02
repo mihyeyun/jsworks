@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이벤트 객체 p409</title>
+    <style>
+        div{
+            height: 100px;
+            background: green;
+            margin-top: 20px;
+            color: #fff;
+        }
+    </style>
+    <script>
+        window.onload = function(){
+            let bt = document.getElementById("bt");
+            let area = document.getElementById("area");
+
+            bt.onclick = function(event){
+                console.log(event.target); //이벤트 발생 객체 반환 <button id="bt">클릭</button>
+                console.log(event.type); //이벤트 유형 - click
+                console.log(event.clientX); //브라우저의 x좌표
+                console.log(event.clientY); //브라우저의 y좌표
+                console.log(event.screenX); //모니터의 x좌표
+                console.log(event.screenY); //모니터의 y좌표
+            }
+            area.onmousedown =  function(event){
+                console.log(event.button);
+            }
+        }
+    </script>
+</head>
+<body>
+    <button id="bt">클릭</button>
+    <div id="area">여기에 마우스 왼쪽, 가운데, 오른쪽 버튼 클릭</div>
+</body>
+</html>
