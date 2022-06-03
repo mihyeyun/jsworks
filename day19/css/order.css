@@ -1,0 +1,34 @@
+#container{
+    width:500px;
+    margin: 30px auto;
+}
+fieldset{
+    border: 1px solid #ccc;
+    margin-bottom: 35px;
+}
+legend{
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-left: 10px;
+}
+ul{list-style: none;}
+li{margin: 20px;}
+.field{
+    width: 60px;
+    float: left;
+    line-height: 2em;
+    text-align: right;
+    margin-right: 10px;
+}
+.input-box{
+    width: 250px;
+    height: 30px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+.order{
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM에서 노드 추가하기</title>
+    <script>
+        function addContents(){
+            let newP = document.createElement("p");
+            let text = document.createTextNode("은은하고 다채로운 꽃향");
+            newP.appendChild(text); //p태그와 내용을 완성
+
+            let newImg = document.createElement("img");
+            let src = document.createAttribute("src");
+            let alt = document.createAttribute("alt");
+            src.value = "images/coffee-gray.jpg";
+            alt.value = "커피 사진";
+            newImg.setAttributeNode(src); //img태그에 연결(완성)
+            newImg.setAttributeNode(alt);
+
+            
+            document.getElementById("info").appendChild(newP); //div에 연결
+            document.getElementById("info").appendChild(newImg);
+        }
+    </script>
+</head>
+<body>
+    <div id="container">
+        <h1>DOM 노드 추가하기</h1>
+        <a href="#" onclick="addContents(); this.onclick=''">더 보기</a>
+        <div id="info">
+            <!-- p 태그가 생성됨 -->
+            <!-- img 태그 생성 -->
+        </div>
+    </div>
+</body>
+</html>
