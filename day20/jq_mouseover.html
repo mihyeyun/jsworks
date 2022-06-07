@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mouseover(), mouseout() -W3school 예제</title>
+    <script src="./js/jquery-3.6.0.js"></script>
+    <script>
+       /* $(document).ready(function(){
+            $("p").mouseover(function(){
+                $("p").css("background", "yellow")
+            });
+            $("p").mouseout(function(){
+                $("p").css("background","lightgray");
+            })
+        }); */
+        $(function(){
+            $("p").on("mouseover", function(){
+                $("p").css("background", "yellow")
+            })
+            $("p").on("mouseout", function(){
+                $("p").css("background","skyblue")
+            })
+        })
+    </script>
+</head>
+<body>
+
+    <p>Move the mouse pointer over this paragraph.</p>
+
+</body>
+</html>
