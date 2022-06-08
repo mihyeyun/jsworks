@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>map() 함수</title>
+</head>
+<body>
+    <h2>map() 함수</h2>
+    <p id="demo"></p>
+
+    <script>
+        const person = [
+            {firstname: "jobs", lastname: "steve"},
+            {firstname: "그래", lastname: " 장"},
+            {firstname: "Gates", lastname: " Bill"},
+        ];
+
+        let people = person.map(getFullName);
+        function getFullName(item){
+            return [item.lastname, item.firstname].join(" ");
+        };
+        document.getElementById("demo").innerHTML = people;
+    </script>
+</body>
+</html>

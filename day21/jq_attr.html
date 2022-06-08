@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attr() 함수</title>
+    <script src="./js/jquery-3.6.0.js"></script>
+    <script>
+        /*$(document).ready(function(){
+            $("#big").click(function(){
+                $("img").attr({"width" : "500", "height" : "600"});
+            });
+            $("#small").click(function(){
+                $("img").attr({"width" : "300", "height" : "200"});
+            });
+        });*/
+
+        //on 함수 사용
+        $(document).ready(function(){
+            $("#big").on("click", function(){
+                $("img").attr({"width" : "500", "height" : "600"});
+            });
+            $("#small").on("click", function(){
+                $("img").attr({"width" : "300", "height" : "200"});
+            });
+        });
+    </script>
+</head>
+<body>
+    <img src="./img/cat.jpg" alt="고양이" width="400" height="300"><br>
+    <button type="button" id="big">확대</button>
+    <button type="button" id="small">축소</button>
+</body>
+</html>

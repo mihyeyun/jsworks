@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>제이쿼리(Jquery)</title>
+    <script src="./js/jquery-3.6.0.js"></script>
+    <script>
+        //제이쿼리 실행 환경
+        $(document).ready(function(){
+            $("h2").css("color", "#00f");
+            $(".info").css({"border-top" : "2px solid #ccc"});
+            $("#intro").css("background", "greenyellow");
+            $(".info").append("<p>나는 서울에 살아요</p>");    //맨 뒤에 추가
+            $(".pic").html("<img src='./img/cat.jpg'>");      //html 태그
+            $("#msg").text("오늘도 좋은 하루 되세요");          //문자열 추가
+            $("#msg").css({"color" : "red", "font-weight" : "bold", "font-size" : "19px"});
+        });
+    </script>
+</head>
+<body>
+    <h2>어서오세요~ 방문을 환영합니다.</h2>
+    <div class="info">
+        <p id="intro">내 이름은 김초엽입니다.</p>
+    </div>
+    <div class="pic"></div>
+    <div id="msg"></div>
+</body>
+</html>

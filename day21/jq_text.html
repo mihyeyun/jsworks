@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text() 메서드</title>
+    <script src="./js/jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(function(){
+            console.log($("#m1").text());   //취득
+            $("#m1").text("responsive web");    //변경
+            $("#m2 > div").text(function(index, text){
+                return "div 요소의 텍스트는 " + text + ", index는" + index;
+            })
+        })
+    </script>
+</head>
+<body>
+    <div id="m1">Jquery</div>
+    <div id="m2">
+        <div>html</div>
+        <div>css</div>
+        <div>javascript</div>
+    </div>
+</body>
+</html>

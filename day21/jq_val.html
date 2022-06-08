@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>val() 함수</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        //기본 실행 환경
+        $(function(){
+            $("button").click(function(){
+                let text = $("#t_input").val();    //입력 값 (value)
+                // document.getElementById("demo").innerHTML = text;
+                $("#t_output").val(text);
+            });
+        });
+    </script>
+</head>
+<body>
+    <input type="text" id="t_input">
+    <button type="button">입력</button>
+    <p id="demo"></p>
+    <p>결과 <input type="text" id="t_output" disabled></p>
+</body>
+</html>
