@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼 관련 이벤트</title>
+    <style>
+        *{margin: 5px;}
+        input[type="text"].on{
+            background: lightcoral;
+            color: white;
+        }
+        p{color: red; display: none;}
+    </style>
+    <script src="./js/jquery-3.6.0.js"></script>
+    <script>
+        $(function(){
+            //focus(), blur() 해당 요소에 이벤트 발생
+            $("#m1 input").focus(function(){
+                $(this).addClass("on")
+            }).blur(function(){
+                $(this).removeClass("on")
+            })
+
+            //focusin(), focusout() -해당요소나 자식요소에 이벤트 
+            $("#m2").focusin(function(){
+                $(this).children().addClass("on")
+            }).focusout(function(){
+                $(this).children().removeClass("on")
+            })
+
+            //change() - 해당 요소의 변경 이벤트
+            $("#m3 input").change(function(){
+                let c = confirm("값을 바꾸시겠습니까?");
+                if(!c){ //취소가 클릭 된다면
+                    $(this).val(10);
+                }
+            })
+
+            //select() - 선택 요소에 값이 변경됐을때 이벤트
+            $("#m4 input").select(function(){
+                let v = $(this).val();  //입력값
+                let size= v.length;     //문자의 길이
+                alert(v + " 총" + size + "문자를 선택하셨습니다.");
+            })
+
+            //submit() - form을 전송할 때 일어나는 이벤트
+            $(".frm").submit(function(){
+                if($("#id").val()==0){
+                    $(".msg1").css("display", "block")
+                    $("#id").focus()
+                    return false;
+                }else{
+                    $(".msg1").css("display", "none")
+                }
+
+                if($("#pw").val()==0){
+                    $(".msg2").css("display", "block");
+                    $("#pw").focus()
+                    return false;
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="m1">
+        <input type="text" placeholder="값을 입력하세요.">
+    </div>
+    <div id="m2">
+        <input type="text" placeholder="값을 입력하세요.">
+    </div>
+    <div id="m3">
+        <span>값을 수정한 후 다음 입력요소로 이동하세요.</span>
+        <input type="text" value="10">
+    </div>
+    <div id="m4">
+        <input type="text" value="텍스트를 드래그하세요.">
+    </div>
+    <form action="#" method="post" class="frm">
+        <fieldset>
+            <legend>로그인</legend>
+            <div>
+                <label for="id">아이디</label>
+                <input type="text" id="id">
+            </div>
+            <p class="msg1">아이디를 입력하세요!</p>
+            <div>
+                <label for="pw">비밀번호</label>
+                <input type="password" id="pw">
+            </div>
+            <p class="msg2">비밀번호를 입력하세요!</p>
+            <button>전송</button>
+        </fieldset>
+    </form>
+</body>
+</html>

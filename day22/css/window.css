@@ -1,0 +1,18 @@
+*{margin: 0; padding: 0;}
+#wrap{height: 2000px;}
+header{height: 100px; border-bottom: 1px solid #999;}
+header.bg{background: #333;}
+#quick{
+    width:100px; height: 400px;
+    background: #f60;
+    position: absolute;
+    top: 150px;
+    left: 100%;
+    margin-left: -100px;
+    text-align: center;
+    color: white;
+}
+#quick.on{
+    position: fixed;
+    top: 50px;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이벤트 객체</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        .display{border: 1px solid #ccc}
+    </style>
+    <script src="./js/jquery-3.6.0.js"></script>
+    <script>
+        $(function(){
+            $("button").click(function(){
+                $.each(event, function(properties, value){
+                    $(".display").append("<p>" + properties + ": " + value + "</p>")
+                })
+            })
+        });
+    </script>
+</head>
+<body>
+    <button>이벤트 객체 보기</button>
+    <div class="display">이벤트 객체</div>
+</body>
+</html>

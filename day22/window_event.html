@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>윈도우 관련 이벤트 p508예제</title>
+    <link rel="stylesheet" href="./css/window.css">
+    <script src="./js/jquery-3.6.0.js"></script>
+    <script>
+        $(function(){
+            $(window).scroll(function(){
+                //퀵 메뉴 고정 코드
+                if($(this).scrollTop() > $("header").height()){
+                    $("#quick").addClass("on");
+                }else{
+                    $("#quick").removeClass("on");
+                }
+                //창 크기 960 미만이면 header 배경색 지정
+            }).resize(function(){
+                if($(this).width() < 960){
+                    $("header").addClass("bg");
+                }else{
+                    $("header").removeClass("bg");
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <header></header>
+    </div>
+    <div id="quick">QUICK</div>
+</body>
+</html>

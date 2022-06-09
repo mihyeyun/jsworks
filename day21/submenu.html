@@ -14,20 +14,31 @@
         $(document).ready(function(){
             //학교 안내
             $(".btn1 a").on("mouseover", function(){
-                let a = $(this);  //이벤트가 일어난 대상
-                a.parent().next().show();
-                a.css("background", "pink")
+                //let a = $(this);  //이벤트가 일어난 대상
+                //a.parent().next().show();
+                //a.css("background", "pink");
+                $(".ul1").css("display", "block");
+                $(".btn1 > a").css("background", "pink");
             });
+
             $(".btn1 a").on("mouseout", function(){
                 let a = $(this);  //이벤트가 일어난 대상
                 a.parent().next().hide();
                 a.css("background", "white")
             });
 
-            $("btn2 a").click(function(){
-                let a = $(this); 
-                a.parent().next().show();
-            });
+           $(".btn2 a").on("click", function(){
+                //let a = $(this);
+                //a.parent().next().show();
+                $(".ul2").css("display", "block");
+           });
+
+           $(".btn2 a").on("mouseout", function(){
+                //let a = $(this);
+                //a.parent().next().hide();
+                //a.css("background", "white")
+                $(".ul2").css("display", "none");
+           });
             
         });
     </script>

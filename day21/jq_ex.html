@@ -11,7 +11,8 @@
             $("h2").css("color", "#00f");
             $(".info").css({"border-top" : "2px solid #ccc"});
             $("#intro").css("background", "greenyellow");
-            $(".info").append("<p>나는 서울에 살아요</p>");    //맨 뒤에 추가
+            $(".info").prepend("<p>나는 서울에 살아요</p>");    //첫번째 자식 요소에 추가
+            //$(".info").append("<p>나는 서울에 살아요</p>");    //마지막 자식 요소에 추가
             $(".pic").html("<img src='./img/cat.jpg'>");      //html 태그
             $("#msg").text("오늘도 좋은 하루 되세요");          //문자열 추가
             $("#msg").css({"color" : "red", "font-weight" : "bold", "font-size" : "19px"});
