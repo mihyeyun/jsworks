@@ -1,0 +1,54 @@
+* {margin: 0; padding: 0;}
+html, body{
+    height: 100%;
+}
+ul li{
+    list-style: none;
+}
+a{
+    font-size: 12px;
+    text-decoration: none;
+    line-height: 20px;
+
+}
+#select{
+    width: 200px;
+    position: absolute;
+    right: 0; bottom: 0;
+    background: #fff;
+}
+#select #title{
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+#select #title a{
+    background: url(../images/icon.gif) no-repeat;
+    background-position: 100% 0;
+}
+#select #title a.on{
+    background-position: 100% -20px;
+}
+#select a{
+    display: block;
+    height: 20px; 
+    line-height: 20px;
+}
+#select #list{
+    border: 1px solid #ccc; 
+    position: absolute;
+    left: 0; top: -94px;
+    width: 200px;
+    background: #fff;
+    display: none;
+}
+#select #list.on{display: block;}
+#select #list a{padding: 5px 10px; border-bottom: 1px solid #ddd;}
+#select #list a:hover,
+#select #list a:focus{
+    background: #f60;
+    color:white;
+}
+#con{
+    height: 100%;
+    background: #ddd;
+}

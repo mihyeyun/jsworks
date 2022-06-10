@@ -1,0 +1,36 @@
+*{margin: 0; padding: 0;}
+li{list-style: none;}
+a{
+    font-size: 12px;
+    color: #000;
+    text-decoration: none;
+}
+#visual{
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+#pic{
+    height: 563px;
+    overflow: hidden;
+}
+#control{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 30px;
+    text-align: center;
+}
+#control a{
+    display: inline-block;
+    width: 26px; height: 26px;
+    background: #000;
+    color: #fff;
+    border-radius: 14px;    /*너비 50%*/
+    line-height: 26px;
+    margin: 0 2px;
+    font-size: 0.8em;
+}
+#control a.on{
+    background: #f60;
+}

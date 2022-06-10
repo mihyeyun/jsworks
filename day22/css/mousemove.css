@@ -12,3 +12,18 @@
     line-height: 300px;
     color: white;
 }
+.tip{
+    width: 250px; height: 30px;
+    background: #333;
+    border-radius: 20px;
+    color: #fff;
+    text-align: center; 
+    line-height: 30px;
+    position: absolute;
+    /* top: 300px; left: 350px; */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.tip.on{
+    opacity: 0.8;
+}

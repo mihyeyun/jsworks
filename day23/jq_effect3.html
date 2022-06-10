@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>제이쿼리 효과</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/jquery-3.6.0.js"></script>
+    <script>
+        $(function(){
+            $("#gnb .m").on("mouseenter focusin", function(){
+                $("ul", this).show();
+                $(this).siblings("li").find("ul").hide();
+                $(this).addClass("on").siblings("li").removeClass("on");
+            }).on("mouseleave", function(){
+                $("#gnb ul").hide().add("#gnb .m").removeClass("on");
+            })
+        });
+    </script>
+</head>
+<body>
+    <h1><a href="#">기본 효과 메서드</a></h1>
+    <ul id="gnb">
+        <li class="m"><a href="#">메뉴1</a>
+            <ul>
+                <li><a href="#">메뉴1_1</a></li>
+                <li><a href="#">메뉴1_2</a></li>
+                <li><a href="#">메뉴1_3</a></li>
+                <li><a href="#">메뉴1_4</a></li>
+            </ul>
+        </li>
+        <li class="m"><a href="#">메뉴2</a>
+            <ul>
+                <li><a href="#">메뉴2_1</a></li>
+                <li><a href="#">메뉴2_2</a></li>
+                <li><a href="#">메뉴2_3</a></li>
+                <li><a href="#">메뉴2_4</a></li>
+            </ul>
+        </li>
+        <li class="m"><a href="#">메뉴3</a>
+            <ul>
+                <li><a href="#">메뉴3_1</a></li>
+                <li><a href="#">메뉴3_2</a></li>
+                <li><a href="#">메뉴3_3</a></li>
+                <li><a href="#">메뉴3_4</a></li>
+            </ul>
+        </li>
+        <li class="m"><a href="#">메뉴4</a>
+            <ul>
+                <li><a href="#">메뉴4_1</a></li>
+                <li><a href="#">메뉴4_2</a></li>
+                <li><a href="#">메뉴4_3</a></li>
+                <li><a href="#">메뉴4_4</a></li>
+            </ul>
+        </li>
+    </ul>
+    <div id="visual"><a href="#">비주얼</a></div>
+</body>
+</html>
