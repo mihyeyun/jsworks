@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ajax 예제</title>
+    <script src="./js/jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                //ajax 비동기통신방식
+                $.ajax({
+                  url: "test.txt",  //파일의 경로
+                  dataType : "text", //데이터 유형(html, json, text)                 
+                  success: function(data){  //data test.txt의 전체 데이터
+                    //console.log(data);
+                    $("#demo").html("<h2>" + data + "</h2>")
+                              .css({color: "blue"});
+                  },
+                  error: function(xhr){     //오류 발생
+                    console.log(xhr.status + "/" + xhr.errorText);
+                  } 
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="demo">
+        <h2>Let jQuery AJAX Change This Text</h2>
+    </div>
+    <p><button type="button">확인</button></p>
+</body>
+</html>

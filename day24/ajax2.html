@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ajax 예제</title>
+    <style>
+        table{
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td{
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+        caption{margin-bottom: 10px;}
+    </style>
+    <script src="./js/jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(function(){
+         $.ajax({
+            type: "GET",
+            url: "score.json",
+            dataType: "json",
+            success: function(data){    //data -score.json 전체 데이터
+                console.log(data);
+                let el = ""; //html 내용 저장할 변수
+                $.each(data, function(index, obj){
+                    el += "<tr>";
+                    el += "<th scope='row'>" + obj.name + "</th>";
+                    el += "<td>" + obj.score1 + "</td>";
+                    el += "<td>" + obj.score2 + "</td>";
+                    el += "<td>" + obj.score3 + "</td>";
+                    el += "</tr>";
+                });
+                $("table tbody").append(el);    //table 안으로 추가
+              },
+              error: function(xhr){ //XmlHttpRequest
+                console.log(xhr.status + "/" + xhr.errorText);
+              }
+            });
+        });
+    </script>
+</head>
+<body>
+    <table>
+        <caption>학생별 시험 점수</caption>
+        <thead>
+            <tr>
+                <th scope="col">이름</th>
+                <th scope="col">html</th>
+                <th scope="col">css</th>
+                <th scope="col">javascript</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+</body>
+</html>
