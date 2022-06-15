@@ -10,8 +10,8 @@ $(document).ready( function() {
 
 	//fadeOut()에 시간 설정
 	function goHide(){
-		for(var i = 1; i <= 4; i++){
-			if(!isOver1[i] && !isOver2[0]){	//상위, 하위 메뉴가 닿았을 때
+		for(var i = 1; i < 4; i++){
+			if(!isOver1[i] && !isOver2[i]){	//상위, 하위 메뉴가 닿았을 때
 			$(".gnb_depth2_" + (i+1)).fadeOut("fast");
 			}
 		}

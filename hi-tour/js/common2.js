@@ -1,6 +1,6 @@
-var isOver1 = false;
-var isOver2 = false;
-function goHide1() {
+var isOver1 = false; 
+var isOver2 = false; 
+function goHide1() {	
 	if (!isOver1 && !isOver2) {
 		$('.gnb_depth2_1').stop().fadeOut('fast');
 	}
@@ -56,7 +56,7 @@ $(document).ready( function() {
 	});
 	$('.openAll1').mouseout(function(){
 		isOver1 = false;
-		setTimeout("goHide1()",200);
+		setTimeout("goHide1()", 200);
 	});	
 	$('.gnb_depth2_1 li:last-child a').blur(function(){
 		isOver1 = false;
@@ -70,7 +70,7 @@ $(document).ready( function() {
 	});	
 	$('.gnb_depth2_1').mouseout(function(){
 		isOver2 = false;
-		setTimeout("goHide1()",200);
+		setTimeout("goHide1()", 200)
 	});	
 	$('.gnb_depth2_1').blur(function(){
 		isOver2 = false;
