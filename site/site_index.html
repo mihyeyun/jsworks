@@ -5,49 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>연습 사이트</title>
-    <style>
-        *{margin: 0; padding: 0; box-sizing: border-box;}
-        .wrap{width:100%; height: 100vh; background: green;}
-        header{width: 100%; height: 10vh; margin: 0 auto; background: darkblue;}
-        .header_inner{width: calc(100% - 300px); height: 10vh; margin:0 auto; background: darkgoldenrod;}
-        nav{background: gray;}
-    </style>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/jquery-3.6.0.js"></script>
+    <script src="./js/common.js"></script>
 </head>
 <body>
-    <div class="wrap">
-        <header>
-            <div class="header_inner">
-                <nav>
-                    <div class="logo"><a href="">홈페이지</a></div>
-                    <ul>
-                        <li>list1
-                            <ul>
-                                <li>sub_list</li>
-                                <li>sub_list</li>
-                                <li>sub_list</li>
-                                <li>sub_list</li>
-                            </ul>
-                        </li>
-                        <li>list2
-                            <ul>
-                                <li>sub_list</li>
-                                <li>sub_list</li>
-                                <li>sub_list</li>
-                                <li>sub_list</li>
-                            </ul>
-                        </li>
-                        <li>list3
-                            <ul>
-                                <li>sub_list</li>
-                                <li>sub_list</li>
-                                <li>sub_list</li>
-                                <li>sub_list</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-    </div>
+<div class="wrap">
+    <header>
+        <div class="header_inner">
+            <nav>
+                <div class="logo"><a href="">홈페이지</a></div>
+                <ul>
+                    <li class="top depth1_1">list1
+                        <ul>
+                            <li>sub_list1</li>
+                            <li>sub_list1</li>
+                            <li>sub_list1</li>
+                        </ul>
+                    </li>
+                    <li class="top depth1_2">list2
+                        <ul>
+                            <li>sub_list2</li>
+                            <li>sub_list2</li>
+                            <li>sub_list2</li>
+                            <li>sub_list2</li>
+                            <li>sub_list2</li>
+                        </ul>
+                    </li>
+                    <li class="top depth1_3">list3
+                        <ul>
+                            <li>sub_list3</li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, assumenda iste rem voluptatum natus corrupti quam, blanditiis quae quas ipsam esse itaque odit molestiae animi quod vitae, voluptatem earum minima.</p>
+    </section>
+</div>
 </body>
 </html>
