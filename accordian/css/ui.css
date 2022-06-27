@@ -1,0 +1,23 @@
+/* 공통 영역 */
+*{margin: 0; padding: 0;}
+ol, ul, li{list-style: none;}
+a{text-decoration: none; color: #999;}
+a:link, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+
+/* content 영역 */
+#content{width: 1000px; margin: 30px auto;}
+#content h3{padding: 20px;}
+.accordion_box ol li{width: 100%; border-top: 4px solid #EA657B;}
+.accordion_box ol li h4{
+    display: block; margin: 20px 20px 0 30px;
+    padding: 0 20px 20px 0; cursor: pointer;
+    background: url(../img/bullit_up.png) no-repeat right 10px;
+}
+.accordion_box ol li.on h4{ background: url(../img/bullit_down.png) no-repeat right 10px;}
+.accordion_box ol li h4 span{display: inline-block; margin-right: 10px; font-weight: 900;}
+.accordion_box ol li p{visibility: hidden;}
+.accordion_box ol li.on p{
+    visibility: visible; padding: 30px 100px 50px 200px;
+    background: #eee;
+}
